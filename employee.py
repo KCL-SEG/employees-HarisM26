@@ -17,10 +17,10 @@ class Employee:
         self.totalPay = self.totalContractPay + self.totalCommissionPay
 
     def get_pay(self):
-        return
+        return self.totalPay
 
     def __str__(self):
-        return f'{self.name} {self.salaryTypeStr} {self.totalContractStr}{self.commissionTypeStr}{self.totalCommissionStr}. Their total pay is {self.totalPay}.'
+        return f"{self.name} {self.salaryTypeStr} {self.totalContractStr}{self.commissionTypeStr}{self.totalCommissionStr}. Their total pay is {self.totalPay}."
 
 
 class ContractPay:
@@ -152,24 +152,18 @@ class CommissionType:
 
 # Billie works on a monthly salary of 4000.  Their total pay is 4000.
 billie = Employee('Billie')
-print(billie.__str__())
 
 # Charlie works on a contract of 100 hours at 25/hour.  Their total pay is 2500.
 charlie = Employee('Charlie')
-print(charlie.__str__())
 
 # Renee works on a monthly salary of 3000 and receives a commission for 4 contract(s) at 200/contract.  Their total pay is 3800.
 renee = Employee('Renee')
-print(renee.__str__())
 
 # Jan works on a contract of 150 hours at 25/hour and receives a commission for 3 contract(s) at 220/contract.  Their total pay is 4410.
 jan = Employee('Jan')
-print(jan.__str__())
 
 # Robbie works on a monthly salary of 2000 and receives a bonus commission of 1500.  Their total pay is 3500.
 robbie = Employee('Robbie')
-print(robbie.__str__())
 
 # Ariel works on a contract of 120 hours at 30/hour and receives a bonus commission of 600.  Their total pay is 4200.
 ariel = Employee('Ariel')
-print(ariel.__str__())
